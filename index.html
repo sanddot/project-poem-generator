@@ -7,35 +7,41 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the AI Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of your choice"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>poem goes here</div>
-    </main>
+    <div class="container">
+      <header>
+        <h1>Welcome to the AI Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of your choice"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">poem goes here</div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/sanddot" target="_blank"
+          >Sandra Domeikiene</a
+        >, is
+        <a
+          href="https://github.com/sanddot/project-poem-generator"
+          target="_blank"
+        >
+          open sourced on GitHub</a
+        >
+        and hosted on
+        <a href="https://letscreatepoem.netlify.app/" target="_blank">
+          Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/sanddot" target="_blank">Sandra Domeikiene</a
-      >, is
-      <a
-        href="https://github.com/sanddot/project-poem-generator"
-        target="_blank"
-      >
-        open sourced on GitHub</a
-      >
-      and hosted on
-      <a href="https://letscreatepoem.netlify.app/" target="_blank"> Netlify</a>
-    </footer>
   </body>
 </html>
