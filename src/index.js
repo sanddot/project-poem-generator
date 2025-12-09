@@ -2,8 +2,12 @@ function generatePoem(event) {
   event.preventDefault();
   //alert("Generating poem");
 
-  let poemAIText = document.querySelector("#poem");
-  poemAIText.innerHTML = "This is the poem!";
+  new Typewriter("#poem", {
+    strings: "This is the poem",
+    autoStart: true,
+    cursor: "",
+    delay: 25,
+  });
 }
 
 let poemFormElement = document.querySelector("#poem-generator-form");
